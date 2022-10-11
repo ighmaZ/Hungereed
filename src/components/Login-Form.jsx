@@ -9,8 +9,8 @@ const LoginForm = () => {
 
 <form className=" shadow-xl px-32 pt-10 pb-32 mt-40 ">
         
-              <label className="text-lg font-bold text-gray-700" for="email">Email</label>
-              <input className="w-full text-lg py-6 px-1 border-b border-gray-300 " type="email" placeholder="Enter your email"/>
+              <label className="text-lg font-bold text-gray-700" for="email">Username</label>
+              <input className="w-full text-lg py-6 px-1 border-b border-gray-300 " type="username" placeholder="Enter your Username"/>
           <div className="mt-8">
               <div className="flex items-center justify-between ">
                   <label className="text-lg font-bold text-gray-700 " for="password">
