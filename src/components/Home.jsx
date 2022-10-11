@@ -1,12 +1,13 @@
 import React from 'react'
-import Login from './Login'
+import LoginForm from './Login-Form'
+
 import NavBar from './NavBar'
 
 const Home = () => {
   return (
     <>
    <NavBar/>
-   <Login/>
+   <LoginForm/>
     </>
   )
 }
