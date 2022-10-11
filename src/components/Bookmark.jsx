@@ -1,8 +1,11 @@
 import React from 'react'
+import NavBar from './NavBar'
 
 const Bookmark = () => {
   return (
-    <div>Bookmark</div>
+    <>
+    <NavBar/>
+    </>
   )
 }
 
