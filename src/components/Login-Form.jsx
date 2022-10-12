@@ -16,8 +16,8 @@ function onSubmit(e){
   axios.get('https://mocki.io/v1/52623ca0-6153-49f7-ab2e-f1a1b50650bc')
   .then((response)=>{
 
-    const userName = username;  // username as types through state
-    const passWord = password;  // password as types through state
+    const userName = username;  // username as typed through state
+    const passWord = password;  // password as typed through state
 
   (response.data.user.map((x) => {  // if username and password  matches with the json api the navigate
 
