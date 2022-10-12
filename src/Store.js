@@ -1,5 +1,5 @@
 
-import create from "zustand/react";
+import create from "zustand";
 import {devtools, persist} from 'zustand/middleware' // running in the browser 
 
 
