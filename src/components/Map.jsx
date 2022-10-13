@@ -1,6 +1,6 @@
 import React from 'react'
 import Iframe from 'react-iframe'
-import useMapStore from '../Store'
+import useMapStore from '../store/Store'
 
 
 export const Map = () => {

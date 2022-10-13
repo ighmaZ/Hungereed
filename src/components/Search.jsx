@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import useMapStore from '../Store'
+import useMapStore from '../store/Store';
 
 const Search = () => {
 
