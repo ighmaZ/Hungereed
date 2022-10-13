@@ -29,7 +29,8 @@ return (
 <h1 className='text-3xl'>{mapItem.title}</h1>
 
 {/* iframe here is used to show map */}
-<Iframe  width="600" height="450" url="https://datastudio.google.com/embed/reporting/430242fa-4162-4950-a984-824b3b355b3c/page/dQMwC?params=%7B%22ds2.name2%22:%22Subway%22%7D"></Iframe>
+
+<Iframe width="600" height="450"  url={`https://datastudio.google.com/embed/reporting/430242fa-4162-4950-a984-824b3b355b3c/page/dQMwC?params=%7B%22ds2.name2%22:%22${mapItem.title}%22%7D`}></Iframe>
 </div>
 
 <div className='flex flex-row items-center justify-center mt-8 w-full mb-10'>
