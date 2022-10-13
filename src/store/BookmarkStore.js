@@ -11,6 +11,7 @@ const BookmarkStore = (set) => ({
     removeBookmarkItem: (mapId) => {    // remove bookmark map
         set((state) => ({
             BookmarkItems: state.BookmarkItems.filter((c) => c.id !== mapId)
+            
         }))
     },
  

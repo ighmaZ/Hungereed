@@ -32,6 +32,7 @@ export const Map = () => {
 
     <>
     
+    
     {mapItems.map((mapItem, i ) => {  
 
 return (  
@@ -41,6 +42,7 @@ return (
     
   <div className='border border-black '>
 <div className='flex flex-col items-center justify-center mt-10 w-full '>
+
 
 <h1 className='text-3xl'>{mapItem.title}</h1>
 
@@ -58,7 +60,8 @@ return (
    removeItem(mapItem.id)
  }}
  className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded'>Remove</button>
- </div>   
+ 
+    </div>   
 </div>
  
 </React.Fragment>

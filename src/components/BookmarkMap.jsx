@@ -14,11 +14,13 @@ const BookmarkMap = () => {
     
 
     )
-    
+
       return (
     
         <>
         
+
+        <h1 className='text-center text-3xl text-red-500 my-10 font-bold'>BOOKMARKED RESTAURANTS</h1>
         {BookmarkItems.map((mapItem, i ) => {  
     
     return (  
