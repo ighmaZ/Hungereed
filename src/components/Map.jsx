@@ -1,16 +1,32 @@
 import React from 'react'
 import Iframe from 'react-iframe'
 import useMapStore from '../store/Store'
-
+import useBookmarkStore from '../store/BookmarkStore'
 
 export const Map = () => {
 
-  const {mapItems, removeItem} = useMapStore(
+  const addBookmarkItem = useBookmarkStore((state) => state.addBookmarkItem) // to add bookmark item
+
+
+  const onClickAdd = () => {   // add bookmark item
+
+    addBookmarkItem({
+        id: Math.ceil(Math.random() * 1000000),
+        
+    })
+ 
+}
+
+
+  const {mapItems, removeItem} = useMapStore( // from map store
     (state) => ({
         mapItems: state.mapItems,
         removeItem: state.removeItem
    })
 
+
+      
+  
 )
   return (
 
@@ -34,7 +50,9 @@ return (
 </div>
 
 <div className='flex flex-row items-center justify-center mt-8 w-full mb-10'>
- <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-32'>Bookmark</button>
+ <button 
+ onClick={onClickAdd}
+ className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-32'>Bookmark</button>
  <button 
  onClick={()=>{
    removeItem(mapItem.id)

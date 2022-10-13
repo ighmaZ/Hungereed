@@ -5,13 +5,15 @@ import {Route, Routes} from 'react-router-dom'
 import HomePage from './components/HomePage'
 import Bookmark from './components/Bookmark'
 
+
 const App = () => {
   return (
     
 <Routes>
   <Route path='/' element={ <Home /> } />
   <Route path='homePage' element={ <HomePage /> } />
-  <Route path='bookmark' element={ <Bookmark /> } />
+  <Route path='homePage/bookMark' element={ <Bookmark/> } />
+
 </Routes>
     
   )

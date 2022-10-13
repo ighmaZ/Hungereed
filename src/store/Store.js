@@ -5,6 +5,7 @@ import {devtools, persist} from 'zustand/middleware' // running in the browser
 
 const mapStore = (set) => ({
     mapItems: [],
+
     addMapItem: (mapItem) => {   // add map
         set((state) => ({
             mapItems: [mapItem, ...state.mapItems],
@@ -15,7 +16,8 @@ const mapStore = (set) => ({
             mapItems: state.mapItems.filter((c) => c.id !== mapId)
         }))
     },
- 
+
+
 })
 
 const useMapStore = create(

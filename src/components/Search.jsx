@@ -7,7 +7,7 @@ const Search = () => {
 
     const [text, setText] = useState("");   // restaurant name
 
-    
+
     const onSubmit = () => {
 
         
