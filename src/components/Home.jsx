@@ -6,7 +6,7 @@ import NavBar from './NavBar'
 const Home = () => {
   return (
     <>
-   <NavBar/>
+   {/* <NavBar/> */}
    <LoginForm/>
     </>
   )

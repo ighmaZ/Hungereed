@@ -33,8 +33,10 @@ function onSubmit(e){
 
 <div className=" mx-auto w-full max-w-xl ">
 
+<h1 className='text-5xl text-center mt-20 font-bold text-blue-600 ml-10'>HUNGEREED</h1>
+
 <form onSubmit={onSubmit}
-className=" shadow-xl px-32 pt-10 pb-32 mt-40 ">
+className=" shadow-xl px-32 pt-10 pb-32 mt-12 border ">
         
               <label className="text-lg font-bold text-gray-700" htmlFor="email">Username</label>
               <input className="w-full text-lg py-6 px-1 border-b border-gray-300 " 

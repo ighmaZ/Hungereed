@@ -23,7 +23,7 @@ const Search = () => {
 
   return (
     <>
-<div className=" text-black text-2xl bg-white flex items-center justify-center py-20">
+<div className=" text-black text-2xl bg-white flex items-center justify-center py-6">
   <div className="border border-blue-600 rounded overflow-hidden flex">
 
     <input type="text" 
