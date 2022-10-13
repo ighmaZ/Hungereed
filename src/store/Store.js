@@ -5,7 +5,6 @@ import {devtools, persist} from 'zustand/middleware' // running in the browser
 
 const mapStore = (set) => ({
     mapItems: [],
-  
     
     addMapItem: (mapItem) => {   // add map
         set((state) => ({

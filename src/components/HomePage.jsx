@@ -5,8 +5,6 @@ import Search from './Search'
 
 const HomePage = () => {
 
-  
-
     return (
       <React.Fragment>
           <NavBar/>
