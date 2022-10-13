@@ -75,13 +75,13 @@ const Search = () => {
      placeholder="Add Restaurants"/>
    
    {suggestions && suggestions.map((suggestion,i) =>
-    <div className='cursor-pointer' onClick={() => onSuggestHandler(suggestions.Name)} key={i}>{suggestion.Name}
+    <div className='cursor-pointer flex flex-col' onClick={() => onSuggestHandler(suggestions.Name)} key={i}>{suggestion.Name}
     </div>
     ) } 
 
     <button 
      onClick={onSubmit}
-    className=" text-white   items-center justify-center px-4 border-l bg-blue-600 hover:bg-blue-700">
+    className=" text-white  items-center justify-center px-4  hover:bg-blue-700">
     ADD
     </button>
   </div>
