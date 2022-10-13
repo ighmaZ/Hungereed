@@ -5,9 +5,7 @@ import {devtools, persist} from 'zustand/middleware' // running in the browser
 
 const mapStore = (set) => ({
     mapItems: [],
-    isLoggedIn: false,
-
-    setLoggedIn: () => set(state => ({ isLoggedIn: true })),
+  
     
     addMapItem: (mapItem) => {   // add map
         set((state) => ({
